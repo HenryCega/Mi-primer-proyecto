@@ -1,0 +1,131 @@
+.form-container {
+    border-bottom: 2px solid #718355; ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.form-container h2 {
+    font-size: 1.5rem;
+    color: #495535;
+    margin: 1rem 0 0 0.3rem;
+}
+
+.searchForm {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 10px auto;
+    border: 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    flex-wrap: wrap;
+}
+
+.searchForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.searchForm label input {
+    height: 1.5rem;
+    background-color: #E9F5DB;
+    max-width: 120px;
+    border: none;
+}
+
+.searchForm label input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+.searchForm .rooms-select {
+    background-color: #E9F5DB;
+    border: none;
+    height: 1.64rem;
+    width: 124px;
+}
+
+.searchForm .date-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.button-container input[type = submit] {
+    border-radius: 20px;
+    min-height: 40px;
+    min-width: 100px;
+    background-color: #B5C99A;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px;
+
+}
+
+.close-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.close-bar-icon {
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .form-container h2 {
+        margin-bottom: 1.5rem;
+    }
+    .searchForm {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .searchForm .date-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .searchForm label input {
+        max-width: none;
+        width: 100vw;
+        height: 2.5rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .searchForm .rooms-select {
+        max-width: none;
+        width: 100vw;
+        height: 2.5rem;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .search-icon-container {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .button-container {
+        width: 100%;
+    }
+    
+    .button-container input[type = submit] {
+        height: 50px;
+        border-radius: 0;
+    }
+
+}
